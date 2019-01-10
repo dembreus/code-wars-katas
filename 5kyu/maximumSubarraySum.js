@@ -1,11 +1,11 @@
 const maxSequence = arr => {
-  let maxSum = 0,
-    currentMax = 0;
+  let sum = 0,
+    max = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    currentMax += arr[i];
-    if (maxSum < currentMax) maxSum = currentMax;
-    if (currentMax < 0) currentMax = 0;
+    max += arr[i];
+    if (sum < max) sum = max;
+    if (max < 0) max = 0;
   }
-  return maxSum;
+  return sum;
 };
